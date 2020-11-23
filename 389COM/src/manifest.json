@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Grayscale All Website",
+  "version": "0.0.1",
+  "description": "Grayscale browsing",
+  
+  "icons": {
+    "48": "icons/icon-dark.svg"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-dark.svg",
+    "theme_icons": [
+      {
+        "light": "icons/icon-dark.svg",
+        "dark": "icons/icon-light.svg",
+        "size": 19
+      }
+    ],
+    "default_popup": "popup/popup.html",
+    "default_title": "Grayscale All Website"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ]
+ 
+}

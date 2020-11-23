@@ -1,0 +1,8 @@
+{
+  "name": "grayscale-browsing",
+  "version": "0.0.1",
+  "description": "mozilla firefox extension",
+  "main": "src/manifest.json",
+  "author": "ckpoh"
+
+}
